@@ -24,8 +24,8 @@
       setTimeout(() => {navigation.style.height = height; }, 0);
 
       //Alternative:
-    	//The fact that we are using offsetWidth is arbitrary.
-    	//We could also use offsetHeight, clientWidth, etc.
+      //The fact that we are using offsetWidth is arbitrary.
+      //We could also use offsetHeight, clientWidth, etc.
       //void navigation.offsetWidth;
       //navigation.style.height = height;
 
@@ -61,16 +61,16 @@
 
 
   toggleButton.addEventListener('click', function(){
-  	const primaryNavigation = document.getElementById('primary-navigation');
-  	if (!document.body.classList.contains('navigation-open')) {
+    const primaryNavigation = document.getElementById('primary-navigation');
+    if (!document.body.classList.contains('navigation-open')) {
       if (window.innerWidth < 992){ wasOpen = true; }
-  	  openNavigation();
+        openNavigation();
     } else {
       if (window.innerWidth < 992){ wasOpen = false; }
       closeNavigation();
     }
   });
-  
+
 
   window.onresize = function(){
     const primaryNavigation = document.getElementById('primary-navigation');
